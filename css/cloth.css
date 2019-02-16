@@ -1,0 +1,306 @@
+.preview-area {
+  width: 65%;
+  display: inline-block;
+  height: 800px;
+  background-color: #e6e3e3; }
+  @media only screen and (max-width: 991px) {
+    .preview-area {
+      width: 100%;
+      min-width: 500px;
+      min-height: 500px;
+      height: 600px; } }
+  .preview-area .preview-img {
+    width: 100%;
+    text-align: center;
+    margin: auto; }
+    .preview-area .preview-img .rotate {
+      width: 80%; }
+      .preview-area .preview-img .rotate #right {
+        width: 50px;
+        height: 50px; }
+      .preview-area .preview-img .rotate #left {
+        height: 50px;
+        width: 50px; }
+    .preview-area .preview-img .m {
+      display: block; }
+      .preview-area .preview-img .m .pos1-m {
+        display: block;
+        width: 500px;
+        height: 500px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: auto;
+        background-image: url("../img/male/b1_1red.png"); }
+        .preview-area .preview-img .m .pos1-m .text1 {
+          position: relative;
+          font-size: 30px;
+          color: white;
+          top: 100px; }
+      .preview-area .preview-img .m .pos2-m {
+        display: none;
+        width: 500px;
+        height: 500px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: auto;
+        background-image: url("../img/male/b2_1red.png"); }
+        .preview-area .preview-img .m .pos2-m .text2 {
+          position: relative;
+          font-size: 30px;
+          color: white;
+          font-size: 20px;
+          top: 185px;
+          left: 30px; }
+      .preview-area .preview-img .m .pos3-m {
+        display: none;
+        width: 500px;
+        height: 500px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: auto;
+        background-image: url("../img/male/b3_1red.png"); }
+        .preview-area .preview-img .m .pos3-m .text3 {
+          position: relative;
+          font-size: 30px;
+          color: white;
+          top: 100px; }
+      .preview-area .preview-img .m .pos4-m {
+        display: none;
+        width: 500px;
+        height: 500px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: auto;
+        background-image: url("../img/male/b4_1red.png"); }
+        .preview-area .preview-img .m .pos4-m .text4 {
+          position: relative;
+          font-size: 30px;
+          color: white;
+          top: 185px;
+          left: -35px;
+          font-size: 20px; }
+    .preview-area .preview-img .f {
+      display: none; }
+      .preview-area .preview-img .f .pos1-f {
+        display: block;
+        width: 500px;
+        height: 500px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: auto;
+        background-image: url("../img/female/g1_1red.png"); }
+        .preview-area .preview-img .f .pos1-f .text1 {
+          position: relative;
+          font-size: 30px;
+          color: white;
+          top: 100px; }
+      .preview-area .preview-img .f .pos2-f {
+        display: none;
+        width: 500px;
+        height: 500px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: auto;
+        background-image: url("../img/female/g2_1red.png"); }
+        .preview-area .preview-img .f .pos2-f .text2 {
+          position: relative;
+          font-size: 30px;
+          color: white;
+          font-size: 20px;
+          top: 185px;
+          left: 30px; }
+      .preview-area .preview-img .f .pos3-f {
+        display: none;
+        width: 500px;
+        height: 500px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: auto;
+        background-image: url("../img/female/g3_1red.png"); }
+        .preview-area .preview-img .f .pos3-f .text3 {
+          position: relative;
+          font-size: 30px;
+          color: white;
+          top: 100px; }
+      .preview-area .preview-img .f .pos4-f {
+        display: none;
+        width: 500px;
+        height: 500px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: auto;
+        background-image: url("../img/female/g4_1red.png"); }
+        .preview-area .preview-img .f .pos4-f .text4 {
+          position: relative;
+          font-size: 30px;
+          color: white;
+          top: 185px;
+          left: -35px;
+          font-size: 20px; }
+
+.work-area {
+  width: 35%;
+  display: inline-block;
+  vertical-align: top; }
+  @media only screen and (max-width: 991px) {
+    .work-area {
+      width: 100%;
+      height: 300px; } }
+  .work-area .tool-item {
+    width: 20%;
+    display: inline-block;
+    background-color: #616161;
+    height: 800px;
+    vertical-align: top; }
+    @media only screen and (max-width: 991px) {
+      .work-area .tool-item {
+        height: 300px; } }
+    .work-area .tool-item .color-icon {
+      text-align: center;
+      height: 50px;
+      border-bottom: 1px solid white;
+      padding-top: 10px; }
+      .work-area .tool-item .color-icon i {
+        font-size: 30px;
+        color: #b9b9b9; }
+    .work-area .tool-item .style-icon {
+      text-align: center;
+      height: 50px;
+      border-bottom: 1px solid white;
+      padding-top: 10px; }
+      .work-area .tool-item .style-icon i {
+        font-size: 30px;
+        color: #b9b9b9; }
+    .work-area .tool-item .diy-icon {
+      text-align: center;
+      height: 50px;
+      border-bottom: 1px solid white;
+      padding-top: 10px; }
+      .work-area .tool-item .diy-icon i {
+        font-size: 30px;
+        color: #b9b9b9; }
+  .work-area .tool-box {
+    width: 80%;
+    display: inline-block; }
+    .work-area .tool-box .colors {
+      width: 80%;
+      text-align: center; }
+      .work-area .tool-box .colors .title {
+        font-size: 30px;
+        color: black; }
+      .work-area .tool-box .colors .red {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+        padding: 0px 3px 0px 3px;
+        margin: 5px;
+        background-image: url("../img/colors/red.png"); }
+      .work-area .tool-box .colors .blue {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+        padding: 0px 3px 0px 3px;
+        margin: 5px;
+        background-image: url("../img/colors/blue.png"); }
+      .work-area .tool-box .colors .green {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+        padding: 0px 3px 0px 3px;
+        margin: 5px;
+        background-image: url("../img/colors/green.png"); }
+      .work-area .tool-box .colors .camblue {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+        padding: 0px 3px 0px 3px;
+        margin: 5px;
+        background-image: url("../img/colors/camblue.jpg"); }
+      .work-area .tool-box .colors .yellow {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+        padding: 0px 3px 0px 3px;
+        margin: 5px;
+        background-image: url("../img/colors/yellow.jpg"); }
+      .work-area .tool-box .colors .purple {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+        padding: 0px 3px 0px 3px;
+        margin: 5px;
+        background-image: url("../img/colors/purple.jpg"); }
+      .work-area .tool-box .colors .orange {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+        padding: 0px 3px 0px 3px;
+        margin: 5px;
+        background-image: url("../img/colors/orange.png"); }
+      .work-area .tool-box .colors .black {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+        padding: 0px 3px 0px 3px;
+        margin: 5px;
+        background-image: url("../img/colors/black.png"); }
+      .work-area .tool-box .colors .lightskyblue {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+        padding: 0px 3px 0px 3px;
+        margin: 5px;
+        background-image: url("../img/colors/lightskyblue.jpg"); }
+      .work-area .tool-box .colors .camcmyk {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+        padding: 0px 3px 0px 3px;
+        margin: 5px;
+        background-image: url("../img/colors/camcmyk.jpg"); }
+    .work-area .tool-box .styles {
+      width: 80%;
+      text-align: center;
+      display: none; }
+      .work-area .tool-box .styles .title {
+        font-size: 30px;
+        color: black; }
+      .work-area .tool-box .styles .gender {
+        width: 50%; }
+        .work-area .tool-box .styles .gender div {
+          background-color: gray;
+          margin-left: 5px;
+          display: inline-block;
+          width: 40%;
+          font-size: 40px; }
+      .work-area .tool-box .styles .size {
+        width: 50%; }
+        .work-area .tool-box .styles .size div {
+          display: inline-block;
+          width: 40%;
+          font-size: 40px; }
+    .work-area .tool-box .diys {
+      width: 80%;
+      text-align: center;
+      display: none; }
+      .work-area .tool-box .diys .title {
+        font-size: 30px;
+        color: black; }

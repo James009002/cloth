@@ -1,0 +1,237 @@
+@mixin color-icons
+	text-align: center
+	height: 50px
+	border-bottom: 1px solid white
+	padding-top: 10px
+
+@mixin color-items
+	display: inline-block
+	width: 50px
+	height: 50px
+	border-radius: 10px
+	padding: 0px 3px 0px 3px
+	margin: 5px
+
+@mixin cloth-style
+	width: 500px
+	height: 500px
+	background-size: cover
+	background-position: center
+	background-repeat: no-repeat
+	margin: auto
+
+@mixin pos-text
+	position: relative
+	font-size: 30px
+	color: white
+
+
+@mixin breakpoint($point)
+	@if $point == pc
+		@media only screen and (max-width: 1024px)
+			@content 
+	@else if $point == pad 
+		@media only screen and (max-width: 991px)  
+			@content 
+	@else if $point == mobile 
+		@media only screen and (max-width: 500px)   
+			@content 
+
+.preview-area
+	width: 65%
+	display: inline-block
+	height: 800px
+	background-color: #e6e3e3
+	@include breakpoint(pad)
+		width: 100%
+		min-width: 500px
+		min-height: 500px
+		height: 600px
+	.preview-img
+		width: 100%
+		text-align: center
+		margin: auto
+		.rotate
+				width: 80%
+				#right
+					width: 50px
+					height: 50px
+				#left
+					height: 50px
+					width: 50px
+		.m
+			display: block
+			.pos1-m
+				display: block
+				@include cloth-style
+				background-image: url("../img/male/b1_1red.png")
+				.text1
+					@include pos-text
+					top: 100px
+			.pos2-m
+				display: none
+				@include cloth-style
+				background-image: url("../img/male/b2_1red.png")
+				.text2
+					@include pos-text
+					font-size: 20px
+					top: 185px
+					left: 30px
+
+			.pos3-m
+				display: none
+				@include cloth-style
+				background-image: url("../img/male/b3_1red.png")
+				.text3
+					@include pos-text
+					top: 100px
+			.pos4-m
+				display: none
+				@include cloth-style
+				background-image: url("../img/male/b4_1red.png")
+				.text4
+					@include pos-text
+					top: 185px
+					left: -35px
+					font-size: 20px
+		.f
+			display: none
+			.pos1-f
+				display: block
+				@include cloth-style
+				background-image: url("../img/female/g1_1red.png")
+				.text1
+					@include pos-text
+					top: 100px
+			.pos2-f
+				display: none
+				@include cloth-style
+				background-image: url("../img/female/g2_1red.png")
+				.text2
+					@include pos-text
+					font-size: 20px
+					top: 185px
+					left: 30px
+
+			.pos3-f
+				display: none
+				@include cloth-style
+				background-image: url("../img/female/g3_1red.png")
+				.text3
+					@include pos-text
+					top: 100px
+			.pos4-f
+				display: none
+				@include cloth-style
+				background-image: url("../img/female/g4_1red.png")
+				.text4
+					@include pos-text
+					top: 185px
+					left: -35px
+					font-size: 20px
+
+
+.work-area
+	width: 35%
+	display: inline-block
+	vertical-align: top
+	@include breakpoint(pad)
+		width: 100%
+		height: 300px
+	.tool-item
+		width: 20%
+		display: inline-block
+		background-color: #616161
+		height: 800px
+		vertical-align: top
+		@include breakpoint(pad)
+			height: 300px
+		.color-icon
+			@include color-icons
+			i
+				font-size: 30px
+				color: #b9b9b9
+		.style-icon
+			@include color-icons
+			i
+				font-size: 30px
+				color: #b9b9b9
+		.diy-icon
+			@include color-icons
+			i
+				font-size: 30px
+				color: #b9b9b9
+	.tool-box
+		width: 80%
+		display: inline-block
+		.colors
+			width: 80%
+			text-align: center
+			.title
+				font-size: 30px
+				color: black
+			.red
+				@include color-items
+				background-image: url("../img/colors/red.png")
+			.blue
+				@include color-items
+				background-image: url("../img/colors/blue.png")
+			.green
+				@include color-items
+				background-image: url("../img/colors/green.png")
+			.camblue
+				@include color-items
+				background-image: url("../img/colors/camblue.jpg")
+			.yellow
+				@include color-items
+				background-image: url("../img/colors/yellow.jpg")
+			.purple
+				@include color-items
+				background-image: url("../img/colors/purple.jpg")
+			.orange
+				@include color-items
+				background-image: url("../img/colors/orange.png")
+			.black
+				@include color-items
+				background-image: url("../img/colors/black.png")
+			.lightskyblue
+				@include color-items
+				background-image: url("../img/colors/lightskyblue.jpg")
+			.camcmyk	
+				@include color-items
+				background-image: url("../img/colors/camcmyk.jpg")
+
+				
+		.styles
+			width: 80%
+			text-align: center
+			display: none
+			.title
+				font-size: 30px
+				color: black
+			.gender
+				width: 50%
+				div
+					background-color: gray
+					margin-left: 5px
+					display: inline-block
+					width: 40%
+					font-size: 40px
+			.size
+				width: 50%
+				div
+					display: inline-block
+					width: 40%
+					font-size: 40px
+		.diys
+			width: 80%
+			text-align: center
+			display: none
+			.title
+				font-size: 30px
+				color: black
+
+		
+			
+			
+	
