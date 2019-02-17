@@ -32,6 +32,11 @@
         background-repeat: no-repeat;
         margin: auto;
         background-image: url("../img/male/b1_1red.png"); }
+        @media only screen and (max-width: 500px) {
+          .preview-area .preview-img .m .pos1-m {
+            background-size: 300px;
+            margin: 0;
+            background-position: 0; } }
         .preview-area .preview-img .m .pos1-m .text1 {
           position: relative;
           font-size: 30px;
@@ -46,12 +51,17 @@
         background-repeat: no-repeat;
         margin: auto;
         background-image: url("../img/male/b2_1red.png"); }
+        @media only screen and (max-width: 500px) {
+          .preview-area .preview-img .m .pos2-m {
+            background-size: 300px;
+            margin: 0;
+            background-position: 0; } }
         .preview-area .preview-img .m .pos2-m .text2 {
           position: relative;
           font-size: 30px;
           color: white;
-          font-size: 20px;
-          top: 185px;
+          font-size: 15px;
+          top: 180px;
           left: 30px; }
       .preview-area .preview-img .m .pos3-m {
         display: none;
@@ -62,6 +72,11 @@
         background-repeat: no-repeat;
         margin: auto;
         background-image: url("../img/male/b3_1red.png"); }
+        @media only screen and (max-width: 500px) {
+          .preview-area .preview-img .m .pos3-m {
+            background-size: 300px;
+            margin: 0;
+            background-position: 0; } }
         .preview-area .preview-img .m .pos3-m .text3 {
           position: relative;
           font-size: 30px;
@@ -76,13 +91,18 @@
         background-repeat: no-repeat;
         margin: auto;
         background-image: url("../img/male/b4_1red.png"); }
+        @media only screen and (max-width: 500px) {
+          .preview-area .preview-img .m .pos4-m {
+            background-size: 300px;
+            margin: 0;
+            background-position: 0; } }
         .preview-area .preview-img .m .pos4-m .text4 {
           position: relative;
           font-size: 30px;
           color: white;
-          top: 185px;
+          top: 180px;
           left: -35px;
-          font-size: 20px; }
+          font-size: 15px; }
     .preview-area .preview-img .f {
       display: none; }
       .preview-area .preview-img .f .pos1-f {
@@ -94,6 +114,11 @@
         background-repeat: no-repeat;
         margin: auto;
         background-image: url("../img/female/g1_1red.png"); }
+        @media only screen and (max-width: 500px) {
+          .preview-area .preview-img .f .pos1-f {
+            background-size: 300px;
+            margin: 0;
+            background-position: 0; } }
         .preview-area .preview-img .f .pos1-f .text1 {
           position: relative;
           font-size: 30px;
@@ -108,12 +133,17 @@
         background-repeat: no-repeat;
         margin: auto;
         background-image: url("../img/female/g2_1red.png"); }
+        @media only screen and (max-width: 500px) {
+          .preview-area .preview-img .f .pos2-f {
+            background-size: 300px;
+            margin: 0;
+            background-position: 0; } }
         .preview-area .preview-img .f .pos2-f .text2 {
           position: relative;
           font-size: 30px;
           color: white;
-          font-size: 20px;
-          top: 185px;
+          font-size: 15px;
+          top: 180px;
           left: 30px; }
       .preview-area .preview-img .f .pos3-f {
         display: none;
@@ -124,6 +154,11 @@
         background-repeat: no-repeat;
         margin: auto;
         background-image: url("../img/female/g3_1red.png"); }
+        @media only screen and (max-width: 500px) {
+          .preview-area .preview-img .f .pos3-f {
+            background-size: 300px;
+            margin: 0;
+            background-position: 0; } }
         .preview-area .preview-img .f .pos3-f .text3 {
           position: relative;
           font-size: 30px;
@@ -138,13 +173,18 @@
         background-repeat: no-repeat;
         margin: auto;
         background-image: url("../img/female/g4_1red.png"); }
+        @media only screen and (max-width: 500px) {
+          .preview-area .preview-img .f .pos4-f {
+            background-size: 300px;
+            margin: 0;
+            background-position: 0; } }
         .preview-area .preview-img .f .pos4-f .text4 {
           position: relative;
           font-size: 30px;
           color: white;
-          top: 185px;
+          top: 180px;
           left: -35px;
-          font-size: 20px; }
+          font-size: 15px; }
 
 .work-area {
   width: 35%;
