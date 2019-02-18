@@ -13,22 +13,30 @@
 	margin: 5px
 
 @mixin cloth-style
+	position: relative
 	width: 500px
 	height: 500px
-	background-size: cover
+	background-size: 500px
 	background-position: center
 	background-repeat: no-repeat
 	margin: auto
 	@include breakpoint(mobile)
-		background-size: 300px
-		margin: 0
-		background-position: 0
+		width: 100%
+		background-size: contain
+
+		
 
 @mixin pos-text
 	position: relative
 	font-size: 30px
 	color: white
+	
 
+	
+
+@mixin color-icon-i
+	font-size: 30px
+	color: #b9b9b9
 
 @mixin breakpoint($point)
 	@if $point == pc
@@ -44,13 +52,9 @@
 .preview-area
 	width: 65%
 	display: inline-block
-	height: 800px
-	background-color: #e6e3e3
 	@include breakpoint(pad)
 		width: 100%
-		min-width: 500px
-		min-height: 500px
-		height: 600px
+		
 	.preview-img
 		width: 100%
 		text-align: center
@@ -65,13 +69,24 @@
 					width: 50px
 		.m
 			display: block
+			width: 100%
 			.pos1-m
 				display: block
 				@include cloth-style
 				background-image: url("../img/male/b1_1red.png")
+				@include breakpoint(mobile)
+					background-position: 0
 				.text1
 					@include pos-text
+					position: relative
 					top: 100px
+					width: 200px
+					margin: auto
+					@include breakpoint(mobile)
+						position: relative
+						font-size: 20px
+						top: 40%
+						width: 30%
 			.pos2-m
 				display: none
 				@include cloth-style
@@ -81,6 +96,10 @@
 					font-size: 15px
 					top: 180px
 					left: 30px
+					@include breakpoint(mobile)
+						font-size: 12px
+						left: 18px
+						top: 205px
 
 			.pos3-m
 				display: none
@@ -89,6 +108,9 @@
 				.text3
 					@include pos-text
 					top: 100px
+					@include breakpoint(mobile)
+						font-size: 20px
+						top: 170px
 			.pos4-m
 				display: none
 				@include cloth-style
@@ -98,15 +120,27 @@
 					top: 180px
 					left: -35px
 					font-size: 15px
+					@include breakpoint(mobile)
+						font-size: 12px
+						left: -20px
+						top: 205px
 		.f
 			display: none
+			width: 100%
 			.pos1-f
 				display: block
 				@include cloth-style
 				background-image: url("../img/female/g1_1red.png")
 				.text1
 					@include pos-text
+					position: relative
 					top: 100px
+					width: 200px
+					margin: auto
+					@include breakpoint(mobile)
+						font-size: 20px
+						top: 200px
+
 			.pos2-f
 				display: none
 				@include cloth-style
@@ -116,6 +150,11 @@
 					font-size: 15px
 					top: 180px
 					left: 30px
+					@include breakpoint(mobile)
+						position: relative
+						top: 40%
+						left: 20px
+						font-size: 13px
 
 			.pos3-f
 				display: none
@@ -124,6 +163,9 @@
 				.text3
 					@include pos-text
 					top: 100px
+					@include breakpoint(mobile)
+						font-size: 20px
+						top: 170px
 			.pos4-f
 				display: none
 				@include cloth-style
@@ -133,6 +175,10 @@
 					top: 180px
 					left: -35px
 					font-size: 15px
+					@include breakpoint(mobile)
+						font-size: 12px
+						left: -20px
+						top: 200px
 
 
 .work-area
@@ -153,18 +199,15 @@
 		.color-icon
 			@include color-icons
 			i
-				font-size: 30px
-				color: #b9b9b9
+				@include color-icon-i
 		.style-icon
 			@include color-icons
 			i
-				font-size: 30px
-				color: #b9b9b9
+				@include color-icon-i
 		.diy-icon
 			@include color-icons
 			i
-				font-size: 30px
-				color: #b9b9b9
+				@include color-icon-i
 	.tool-box
 		width: 80%
 		display: inline-block
@@ -235,6 +278,7 @@
 				font-size: 30px
 				color: black
 
+	
 		
 			
 			
