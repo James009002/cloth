@@ -14,10 +14,6 @@
 
 	<div class="preview-area">
 		<div class="preview-img">
-			<div class="rotate">
-				<button id="right">往右</button>
-				<button id="left">往左</button>
-			</div>
 			<div class="m">
 				<div class="pos1-m">
 					<div class="text1">正面內容</div>
@@ -45,6 +41,10 @@
 				<div class="pos4-f">
 					<div class="text4">右側內容</div>
 				</div>
+			</div>
+			<div class="rotate">
+				<button id="right">往右</button>
+				<button id="left">往左</button>
 			</div>
 		</div>
 	</div>
@@ -76,6 +76,10 @@
 				<div class="orange"></div>
 				<div class="lightskyblue"></div>
 				<div class="camcmyk"></div>
+				<div class="brown"></div>
+				<div class="deepskyblue"></div>
+				<div class="lightskyblue"></div>
+				<div class="gray"></div>
 			</div>
 			<div class="styles">
 				<div class="title">性別</div>
@@ -107,29 +111,32 @@
 
 
 
+
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
 
 <script type="text/javascript">
 
 
-	// 	window.onload=function(){
-	// 	var next=document.getElementById("next");
-	// 	var prev=document.getElementById("prev");
-	// 	var pic=document.getElementById("pic");
-	// 	var n = 1;
 
-	// 	next.onclick=function(){
-	// 	n++;
-	// 		if(n>4){
-	// 			n=1;
-	// 		}
-	// 		pic.src='img/b'+ n +'-1red.png';
-	// 		console.log(n)
 
-	// 	};
+		// window.onload=function(){
+		// var next=document.getElementById("next");
+		// var prev=document.getElementById("prev");
+		// var pic=document.getElementById("pic");
+		// var n = 1;
 
-	// 	prev.onclick=function(){
-	// 	n--;
+		// next.onclick=function(){
+		// n++;
+		// 	if(n>4){
+		// 		n=1;
+		// 	}
+		// 	pic.src='img/b'+ n +'-1red.png';
+		// 	console.log(n);
+
+		// };
+
+		// prev.onclick=function(){
+		// n--;
 	// 		if(n<1){
 	// 				n=4;
 	// 			}
@@ -310,6 +317,68 @@
 		$(".pos4-m").css('background-image','url(./img/male/b4_1CamCMYK.png)');
 		$(".text1 , .text2 , .text3 , .text4").css("color","white");
 	});
+
+	$(".brown").click(function(){
+		$(".pos1-f").css('background-image','url(./img/female/g1_1brown.png)');
+		$(".pos2-f").css('background-image','url(./img/female/g2_1brown.png)');
+		$(".pos3-f").css('background-image','url(./img/female/g3_1brown.png)');
+		$(".pos4-f").css('background-image','url(./img/female/g4_1brown.png)');
+		$(".pos1-m").css('background-image','url(./img/male/b1_1brown.png)');
+		$(".pos2-m").css('background-image','url(./img/male/b2_1brown.png)');
+		$(".pos3-m").css('background-image','url(./img/male/b3_1brown.png)');
+		$(".pos4-m").css('background-image','url(./img/male/b4_1brown.png)');
+		$(".text1 , .text2 , .text3 , .text4").css("color","white");
+	});
+
+	$(".deepskyblue").click(function(){
+		$(".pos1-f").css('background-image','url(./img/female/g1_1deepskyblue.png)');
+		$(".pos2-f").css('background-image','url(./img/female/g2_1deepskyblue.png)');
+		$(".pos3-f").css('background-image','url(./img/female/g3_1deepskyblue.png)');
+		$(".pos4-f").css('background-image','url(./img/female/g4_1deepskyblue.png)');
+		$(".pos1-m").css('background-image','url(./img/male/b1_1deepskyblue.png)');
+		$(".pos2-m").css('background-image','url(./img/male/b2_1deepskyblue.png)');
+		$(".pos3-m").css('background-image','url(./img/male/b3_1deepskyblue.png)');
+		$(".pos4-m").css('background-image','url(./img/male/b4_1deepskyblue.png)');
+		$(".text1 , .text2 , .text3 , .text4").css("color","white");
+	});
+
+	$(".skyblue").click(function(){
+		$(".pos1-f").css('background-image','url(./img/female/g1_1skyblue.png)');
+		$(".pos2-f").css('background-image','url(./img/female/g2_1skyblue.png)');
+		$(".pos3-f").css('background-image','url(./img/female/g3_1skyblue.png)');
+		$(".pos4-f").css('background-image','url(./img/female/g4_1skyblue.png)');
+		$(".pos1-m").css('background-image','url(./img/male/b1_1skyblue.png)');
+		$(".pos2-m").css('background-image','url(./img/male/b2_1skyblue.png)');
+		$(".pos3-m").css('background-image','url(./img/male/b3_1skyblue.png)');
+		$(".pos4-m").css('background-image','url(./img/male/b4_1skyblue.png)');
+		$(".text1 , .text2 , .text3 , .text4").css("color","white");
+	});
+
+	$(".gray").click(function(){
+		$(".pos1-f").css('background-image','url(./img/female/g1_1gray.png)');
+		$(".pos2-f").css('background-image','url(./img/female/g2_1gray.png)');
+		$(".pos3-f").css('background-image','url(./img/female/g3_1gray.png)');
+		$(".pos4-f").css('background-image','url(./img/female/g4_1gray.png)');
+		$(".pos1-m").css('background-image','url(./img/male/b1_1gray.png)');
+		$(".pos2-m").css('background-image','url(./img/male/b2_1gray.png)');
+		$(".pos3-m").css('background-image','url(./img/male/b3_1gray.png)');
+		$(".pos4-m").css('background-image','url(./img/male/b4_1gray.png)');
+		$(".text1 , .text2 , .text3 , .text4").css("color","white");
+	});	
+
+		$(".testme").click(function(){
+		$(".pos1-f").css('background-image','url(./img/female/g1_1testme.png)');
+		$(".pos2-f").css('background-image','url(./img/female/g2_1testme.png)');
+		$(".pos3-f").css('background-image','url(./img/female/g3_1testme.png)');
+		$(".pos4-f").css('background-image','url(./img/female/g4_1testme.png)');
+		$(".pos1-m").css('background-image','url(./img/male/b1_1testme.png)');
+		$(".pos2-m").css('background-image','url(./img/male/b2_1testme.png)');
+		$(".pos3-m").css('background-image','url(./img/male/b3_1testme.png)');
+		$(".pos4-m").css('background-image','url(./img/male/b4_1testme.png)');
+		$(".text1 , .text2 , .text3 , .text4").css("color","white");
+	});	
+
+
 	//往右往左點擊的設定//
 
 	$(document).ready(function(){

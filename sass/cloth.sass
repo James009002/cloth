@@ -46,7 +46,7 @@
 		@media only screen and (max-width: 991px)  
 			@content 
 	@else if $point == mobile 
-		@media only screen and (max-width: 500px)   
+		@media only screen and (max-width: 491px)   
 			@content 
 
 .preview-area
@@ -79,13 +79,13 @@
 				.text1
 					@include pos-text
 					position: relative
-					top: 100px
+					top: 125px
 					width: 200px
 					margin: auto
 					@include breakpoint(mobile)
 						position: relative
 						font-size: 20px
-						top: 150px
+						top: 160px
 						width: 30%
 			.pos2-m
 				display: none
@@ -110,7 +110,7 @@
 					top: 100px
 					@include breakpoint(mobile)
 						font-size: 20px
-						top: 170px
+						top: 160px
 			.pos4-m
 				display: none
 				@include cloth-style
@@ -122,8 +122,8 @@
 					font-size: 15px
 					@include breakpoint(mobile)
 						font-size: 12px
-						left: -20px
-						top: 205px
+						left: -17px
+						top: 200px
 		.f
 			display: none
 			width: 100%
@@ -134,12 +134,12 @@
 				.text1
 					@include pos-text
 					position: relative
-					top: 100px
+					top: 125px
 					width: 200px
 					margin: auto
 					@include breakpoint(mobile)
 						font-size: 20px
-						top: 150px
+						top: 160px
 
 			.pos2-f
 				display: none
@@ -165,7 +165,7 @@
 					top: 100px
 					@include breakpoint(mobile)
 						font-size: 20px
-						top: 170px
+						top: 160px
 			.pos4-f
 				display: none
 				@include cloth-style
@@ -177,8 +177,8 @@
 					font-size: 15px
 					@include breakpoint(mobile)
 						font-size: 12px
-						left: -20px
-						top: 200px
+						left: -25px
+						top: 190px
 
 
 .work-area
@@ -247,6 +247,26 @@
 			.camcmyk	
 				@include color-items
 				background-image: url("../img/colors/camcmyk.jpg")
+			.brown
+				@include color-items
+				background-image: url("../img/colors/brown.jpg")
+			.deepskyblue
+				@include color-items
+				background-image: url("../img/colors/deepskyblue.jpg")
+			.skyblue
+				@include color-items
+				background-image: url("../img/colors/lightskyblue.jpg")
+			.gray
+				@include color-items
+				background-image: url("../img/colors/gray.jpg")
+
+
+
+
+
+
+
+
 
 				
 		.styles
